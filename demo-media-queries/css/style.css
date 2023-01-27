@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div:first-of-type {
+    padding: 2rem;
+    background-color: tomato;
+}
+
+div:nth-of-type(2) {
+    padding: 2rem;
+    background-color: khaki;
+}
+
+div:last-of-type {
+    padding: 2rem;
+    background-color: seagreen;
+}
+
+main {
+    max-width: 960px;
+}
+
+@media screen and (min-width: 700px) {
+    div:first-of-type {
+        background-color: rebeccapurple;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    div.first-of-type {
+        background-color: mediumslateblue;
+    }
+
+    div:nth-of-type(2) {
+        background-color: olive;
+    }
+}
+
+@media screen and (min-width: 1880px) {
+    main {
+        max-width: 1700px;
+    }
+}
